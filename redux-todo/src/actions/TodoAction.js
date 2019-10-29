@@ -1,13 +1,13 @@
 export function addTodo (text) {
     return {
-        type: 'ADD_TODO',
+        type: 'TODO_ADD',
         payload: text,
     }
 }
 
 export function removeTodo (id) {
     return {
-        type: 'REMOVE_TODO',
+        type: 'TODO_REMOVE',
         payload: id,
     }
 }
