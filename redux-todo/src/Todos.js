@@ -40,7 +40,7 @@ class Todos extends Component {
             <div className="todo__itens">
             {this.props.todos.map(todo => (
               <div key={todo.id} className="todo__li">
-                <li>{todo.text}</li>
+                <li className="todo__item">{todo.text}</li>
                 <button className="todo__remove-button" onClick={() => this.removeTodo(todo.id)}>Remover</button>
                </div>
             ))}
