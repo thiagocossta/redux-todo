@@ -11,7 +11,10 @@ class Todos extends Component {
     };
 
     addTodo = () => {
-      this.props.addTodo(this.state.todoText);
+      const { todoText } = this.state;
+      if (todoText !== '') {
+        this.props.addTodo(todoText);
+      }
       this.setState({todoText: ''});
     };
 
